@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1857248519551066}
+  m_IsPrefabParent: 1
+--- !u!1 &1857248519551066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4704191904969052}
+  - component: {fileID: 114368587483653722}
+  - component: {fileID: 114857429918033842}
+  - component: {fileID: 114633644421544872}
+  - component: {fileID: 114871599504856486}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4704191904969052
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857248519551066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114368587483653722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857248519551066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c75688734b08a4080e7512e1feba54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlive: 1
+  willAdvance: 0
+  level: 1
+  difficulty: 1
+  spawnCount: 20
+  scoreCanvas: {fileID: 0}
+  levelText: {fileID: 0}
+  highscoreText: {fileID: 0}
+  statusCanvas: {fileID: 0}
+  victoryText: {fileID: 0}
+  defeatedText: {fileID: 0}
+  bossDefeated: 0
+--- !u!114 &114633644421544872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857248519551066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f03c0074efdd34782a5f9b8530cd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 1942966068718260, guid: 56bd011834cde8446ac4d80130d137af,
+    type: 2}
+  itemPrefabs:
+  - {fileID: 1091327371988134, guid: 6a71e002115ad1d4f80747ca3a4f5270, type: 2}
+  - {fileID: 1206411594458030, guid: 4563835ad13dcf84291a044a33120198, type: 2}
+  - {fileID: 1883604480759918, guid: 283cb233ad2609640bb2e23c2ca64f5e, type: 2}
+  - {fileID: 1238470754270592, guid: deb40986a33d0bf4894b597186433a07, type: 2}
+  - {fileID: 1988549379733470, guid: 756baffd2b751c941a4087719fb1751a, type: 2}
+  - {fileID: 1997557024961534, guid: a44c4a56972434e4ea2c6ce5b915e893, type: 2}
+  - {fileID: 1831212752856724, guid: 22a54bea0d5b420429070decfe40295c, type: 2}
+  - {fileID: 1438026298028940, guid: 896a16ae323397846bd96c5736123865, type: 2}
+  - {fileID: 1359398037968522, guid: 067aa82ce2e85c740ac8f3583731b7aa, type: 2}
+  - {fileID: 1024305403281998, guid: 4544318c12955db4bbd8ce9cb028d497, type: 2}
+  - {fileID: 1917274600961064, guid: df0c540a6c54d384bad3e61436258da0, type: 2}
+  - {fileID: 1793053574987414, guid: 6a8f4266a4f81c14c899e701485cc18a, type: 2}
+  - {fileID: 1581538487058664, guid: 1cef9e588e8e7d2428003b3c9720b5a0, type: 2}
+  - {fileID: 1547443893409988, guid: e77926fd1c520274cae7efb5c7fd8ce4, type: 2}
+  - {fileID: 1344650726149382, guid: c6fd4c957238e1c4d8b5b140ad2ff3a8, type: 2}
+  enemyPrefabs:
+  - {fileID: 1662504473930272, guid: 42fd685592890ce46beabcd5c75cd972, type: 2}
+  - {fileID: 1550442225231458, guid: 235841fe859abb84f8bb1f2a8f51790a, type: 2}
+  - {fileID: 1599902256409952, guid: 1220f05bfd3bae040994ed240a4e9b81, type: 2}
+  bossPrefab: {fileID: 1150531800395934, guid: ba6cfec2ae390c8439bb07203ca098b0, type: 2}
+--- !u!114 &114857429918033842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857248519551066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7024ce8fab9dd7f42972d3cc03138031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perLevelMoveSpeed: 0.5
+  perLevelJumpForce: 50
+  perLevelMaxHealth: 30
+  perLevelDamageFactor: 0.1
+  perLevelAttack: 10
+  perLevelManaRegen: 0.5
+  cardCanvas: {fileID: 0}
+  upgradeCardsButton:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  upgradeList:
+  - {fileID: 11400000, guid: 58f7d2986384f544a8d62d5efcf655a0, type: 2}
+  - {fileID: 11400000, guid: 9a4ce481f22996b449e9657aa9d20399, type: 2}
+  - {fileID: 11400000, guid: 39809e147b073944eb8d2cf50d4ae0aa, type: 2}
+  - {fileID: 11400000, guid: 345b2de788bafa6448abd78aef1d1608, type: 2}
+  - {fileID: 11400000, guid: bf2db777fa132ca4b8a4ba4db26ad2b1, type: 2}
+  - {fileID: 11400000, guid: 7da8363c3e078b645816d317829315ec, type: 2}
+  renewList: []
+--- !u!114 &114871599504856486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857248519551066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5e16f2c8efed04d8e5012d60ff320d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomPrefabs:
+  - {fileID: 1807796631880032, guid: 8071e58728e05804fa6757a6fa8f2bf9, type: 2}
+  - {fileID: 1157869933355402, guid: b72dbeaaec339184babff8a52669a7f4, type: 2}
+  - {fileID: 1178566507126574, guid: 9b020cbcf7ad76448a1b51fb9560531d, type: 2}
+  - {fileID: 1175812238304474, guid: bc30905957dd5394f9a65f7901ab5d5d, type: 2}
+  - {fileID: 1346615481219096, guid: 7889f21a72f0c2a4ca655f30c6f0161b, type: 2}
+  - {fileID: 1210730793382010, guid: 4a6651bc0564dbd4588414602e108bac, type: 2}
+  - {fileID: 1675078667454962, guid: 4ad1c443757ea564ab9664a032467d33, type: 2}
+  mapHeight: 5
+  mapWidth: 7
+  roomHeight: 6
+  roomWidth: 12

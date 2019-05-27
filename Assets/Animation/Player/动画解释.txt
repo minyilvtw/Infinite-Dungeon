@@ -1,0 +1,34 @@
+原地
+原地+拿出武器
+
+上砍攻击 - Attack1
+下砍攻击 - Attack2
+蓄力回旋攻击 - Attack3 （后面的几帧可以做冲刺攻击）
+
+空中攻击（平砍，可做地面）- Airattack1
+空中上砍 - Airattack2
+空中下劈 - Airattack3（下劈+击地）
+
+施法
+施法（持续）
+
+跳跃
+侧跳（墙跳）-crnr jump
+下坠
+
+抓悬崖 - crnr grb
+抓墙壁 - wall slide
+
+打滚 - smrslt
+滑地 - stand
+侧身爬墙
+
+使用道具
+
+受伤
+死亡
+
+蹲x
+拔剑x - swrd drw
+收剑x - swrd shte
+
